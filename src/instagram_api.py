@@ -25,7 +25,7 @@ class InstagramAPI:
 
     async def _make_request(self, method: str, endpoint: str, data: Optional[dict] = None):
         proxy = await self.proxy_manager.get_proxy()
-        
+    
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.request(
@@ -33,17 +33,26 @@ class InstagramAPI:
                     f"{self.api_url}/{endpoint}",
                     json=data if method == "POST" else None,
                     headers=self.headers,
-                    proxy=proxy
+                    proxy=proxy,
+                    allow_redirects=False
                 ) as response:
-                    if response.status == 200:
-                        return await response.json()
-                    elif response.status == 429:
-                        print_error("Rate limit reached. Switching proxy...")
-                        await self.proxy_manager.remove_proxy(proxy)
-                        return await self._make_request(method, endpoint, data)
-                    else:
-                        print_error(f"Request failed with status {response.status}")
+    
+                    content_type = response.headers.get("Content-Type", "")
+    
+                    # Login redirect or block
+                    if response.status in (301, 302, 401, 403):
+                        text = await response.text()
+                        print_error("Instagram returned auth/HTML response")
                         return None
+    
+                    if "application/json" in content_type:
+                        return await response.json()
+    
+                    # HTML response (login page)
+                    text = await response.text()
+                    print_error("Received HTML instead of JSON")
+                    return None
+    
             except Exception as e:
                 print_error(f"Request error: {str(e)}")
                 await self.proxy_manager.remove_proxy(proxy)
